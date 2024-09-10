@@ -24,7 +24,7 @@ const RegisterForm = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        withCredentials: true,  // Include credentials if needed
+        withCredentials: true,  
       });
 
       if (response.status !== 200) throw new Error(response.data.error || "Registration failed");
