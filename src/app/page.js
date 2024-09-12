@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Book, BookDown } from "lucide-react";
 import { useRouter } from "next/navigation";
+import Header from "@/components/navigation/Header";
 export default function Home() {
   const router = useRouter();
 
@@ -16,6 +17,7 @@ export default function Home() {
   };
   return (
     <>
+    <Header/>
       <main className="flex justify-center items-center h-screen">
         <div className="flex flex-col items-center">
           <Image src="/logo.jpeg" width={500} height={500}/>
